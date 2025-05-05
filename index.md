@@ -137,7 +137,7 @@ This project analyzes the communication network within Enron Corporation using e
 
 ## Network Visualization
 <figure>
-  <img src="/images/networkgraph.png" alt="Force-directed layout of Enron email network" />
+  <img src="images/networkgraph.png" alt="Force-directed layout of Enron email network" />
   <figcaption>Figure 1. Enron email network: node size ∝ number of unique contacts.</figcaption>
 </figure>
 
