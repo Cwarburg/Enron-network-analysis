@@ -126,13 +126,12 @@ h2 {
 }
 </style>
 
-# Enron Email Network Analysis
 
 ## Overview
-This project analyzes the communication network within Enron Corporation using email data. The analysis focuses on identifying key communicators and understanding the structure of internal communications.
+This project analyzes the communication network within Enron Corporation using email data. The analysis focuses on identifying key employees and understanding their communication patterns. The motivation behind this project
 
 ## Network Visualization
-![Enron Email Network](network_visualization.png)
+![Enron Email Network](images/networkgraph.png.png)
 
 The network visualization shows the communication patterns between Enron employees. Each node represents an employee, and each edge represents an email communication. The visualization highlights the most active communicators in the network.
 
