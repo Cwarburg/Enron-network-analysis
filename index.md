@@ -224,7 +224,11 @@ Betweenness centrality measures how often a node appears on the shortest paths b
 
 ## Community Detection
 
-In social networks, community detection helps identify groups of nodes that are more densely connected to each other than to the rest of the network—often reflecting organizational units or shared functions. In the Enron dataset, we detected 5 distinct communities, each representing clusters of employees with strong internal communication ties.
+In social networks, community detection helps identify groups of nodes that are more densely connected to each other than to the rest of the network—often reflecting organizational units or shared functions. In the Enron dataset, we detected 6 distinct communities, each representing clusters of employees with strong internal communication ties. To calculate the communities, we used the Louvain method. 
+
+
+
+
 
 
 
@@ -250,7 +254,10 @@ The analysis focused on identifying key communicators and understanding communic
 The analysis is based on the Enron email dataset, which contains internal communications from Enron Corporation.
 
 ## Code
-The analysis code is available in the [GitHub repository](https://github.com/yourusername/enron-network-analysis).
+The analysis code is available in the [GitHub repository](https://github.com/cwarburg/enron-network-analysis).
+
+## Dataset
+the dataset is available on [kaggle](https://www.kaggle.com/datasets/wcukierski/enron-email-dataset/data)
 
 <div class="contact-section">
   <h2> Contact</h2>
