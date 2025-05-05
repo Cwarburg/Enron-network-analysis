@@ -1,7 +1,20 @@
----
-layout: default
-title: Enron Email Network Analysis
----
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Enron Email Network Analysis</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; }
+        img { max-width: 100%; }
+    </style>
+</head>
+<body>
+<hr />
+
+<p>layout: default</p>
+
+<h2>title: Enron Email Network Analysis</h2>
 
 <style>
 :root {
@@ -20,12 +33,7 @@ body {
   margin: 0 auto;
   padding: 2rem;
 }
-.network-visualization img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
+
 header {
   text-align: center;
   margin-bottom: 4rem;
@@ -120,41 +128,45 @@ h2 {
   body {
     padding: 1rem;
   }
-  
+
   h1 {
     font-size: 2rem;
   }
-  
+
   .stats-grid {
     grid-template-columns: 1fr;
   }
 }
 </style>
 
+<h1>Enron Email Network Analysis</h1>
 
-## Overview
-This project analyzes the communication network within Enron Corporation using email data. The analysis focuses on identifying key employees and understanding their communication patterns. The motivation behind this project
+<h2>Overview</h2>
 
-## Network Visualization
-<figure>
-  <img src="/images/networkgraph.png" alt="Force-directed layout of Enron email network" />
-  <figcaption>Figure 1. Enron email network: node size ∝ number of unique contacts.</figcaption>
-</figure>
+<p>This project analyzes the communication network within Enron Corporation using email data. The analysis focuses on identifying key communicators and understanding the structure of internal communications.</p>
 
-The network visualization shows the communication patterns between Enron employees. Each node represents an employee, and each edge represents an email communication. The visualization highlights the most active communicators in the network.
+<h2>Network Visualization</h2>
 
-## Key Findings
+<p><img src="network_visualization.png" alt="Enron Email Network" /></p>
 
-### Most Central Communicators
-The following employees were identified as the most central in the communication network:
+<p>The network visualization shows the communication patterns between Enron employees. Each node represents an employee, and each edge represents an email communication. The visualization highlights the most active communicators in the network.</p>
 
-1. [Top Central Person 1]
-2. [Top Central Person 2]
-3. [Top Central Person 3]
-4. [Top Central Person 4]
-5. [Top Central Person 5]
+<h2>Key Findings</h2>
 
-### Network Statistics
+<h3>Most Central Communicators</h3>
+
+<p>The following employees were identified as the most central in the communication network:</p>
+
+<ol>
+<li>[Top Central Person 1]</li>
+<li>[Top Central Person 2]</li>
+<li>[Top Central Person 3]</li>
+<li>[Top Central Person 4]</li>
+<li>[Top Central Person 5]</li>
+</ol>
+
+<h3>Network Statistics</h3>
+
 <div class="stats-grid">
   <div class="stat-card">
     <div class="stat-number">[Number]</div>
@@ -166,12 +178,14 @@ The following employees were identified as the most central in the communication
   </div>
   <div class="stat-card">
     <div class="stat-number">[Number]</div>
-    <div>Avg. psyko</div>
+    <div>Avg. Connections</div>
   </div>
 </div>
 
-## Methodology
-The analysis was conducted using:
+<h2>Methodology</h2>
+
+<p>The analysis was conducted using:</p>
+
 <div class="methodology">
   <span class="methodology-item">Python</span>
   <span class="methodology-item">NetworkX</span>
@@ -179,17 +193,22 @@ The analysis was conducted using:
   <span class="methodology-item">Matplotlib</span>
 </div>
 
-The network was filtered to include only:
+<p>The network was filtered to include only:
 - Enron email addresses (@enron.com)
-- Employees who sent more than 50 emails
+- Employees who sent more than 50 emails</p>
 
-## Data Source
-The analysis is based on the Enron email dataset, which contains internal communications from Enron Corporation.
+<h2>Data Source</h2>
 
-## Code
-The analysis code is available in the [GitHub repository](https://github.com/yourusername/enron-network-analysis).
+<p>The analysis is based on the Enron email dataset, which contains internal communications from Enron Corporation.</p>
+
+<h2>Code</h2>
+
+<p>The analysis code is available in the <a href="https://github.com/yourusername/enron-network-analysis">GitHub repository</a>.</p>
 
 <div class="contact-section">
   <h2>Contact</h2>
   <p>For questions or comments about this analysis, please contact [your email].</p>
 </div>
+
+</body>
+</html>
