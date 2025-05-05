@@ -197,8 +197,7 @@ After preprocessing:
 
 
 ## Key Findings
-
-After calculating the centrality score for the remaining employees, we discovred that Sara Shackleton, Tana Jones and Mark Taylor were the most central figures in the dataset.
+Centrality scores quantify the importance or influence of a node within a network based on its position and connections. After calculating these scores for the Enron employees, we found that Sara Shackleton, Tana Jones, and Mark Taylor, Louise Kitchens and Elizabeth Sager emerged as the most central figures in the communication network.
 <figure>
   <img src="images/centrality.png" alt="Centrality of the Enron dataset" />
   <figcaption>Figure 1. Enron email network: node size ∝ number of unique contacts.</figcaption>
@@ -210,10 +209,22 @@ The following employees were identified as the most central in the communication
 
 1. [Sara Shackleton, President for Enron North America]
 2. [Tana Jones, Negotiator at Enron Capital and Trade Resources ]
-3. [Louise Kitchens COO]
-4. [Top Central Person 4]
-5. [Top Central Person 5]
+3. [Louise Kitchens, COO]
+4. [Mark Taylor, Vice President]
+5. [Elizabeth Sager, Chief Lawyer 5]
 
+
+## Betweenness Score
+
+Betweenness centrality measures how often a node appears on the shortest paths between other nodes, indicating its role as a bridge within the network. While many familiar names reappear in this ranking, a new key figure—Sally Beck—also emerges, highlighting her strategic position in the flow of information.
+<figure>
+  <img src="images/betweenness.png" alt="Centrality of the Enron dataset" />
+  <figcaption>Figure 1. Enron email network: node size ∝ number of unique contacts.</figcaption>
+</figure>
+
+## Community Detection
+
+In social networks, community detection helps identify groups of nodes that are more densely connected to each other than to the rest of the network—often reflecting organizational units or shared functions. In the Enron dataset, we detected 5 distinct communities, each representing clusters of employees with strong internal communication ties.
 
 
 
