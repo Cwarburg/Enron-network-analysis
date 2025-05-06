@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Enron Email Network Analysis
+title: "Enron Network Analysis"
+subtitle: "Exploring the Enron dataset with Natural Language Processing"
 ---
 
 <style>
@@ -20,12 +21,7 @@ body {
   margin: 0 auto;
   padding: 2rem;
 }
-.network-visualization img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
+
 header {
   text-align: center;
   margin-bottom: 4rem;
@@ -36,14 +32,34 @@ header {
 h1 {
   font-size: 3rem;
   color: var(--primary-color);
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   font-weight: 800;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  font-style: italic;
+  margin-top: -0.5rem;
 }
 
 h2 {
   color: var(--secondary-color);
   margin-top: 3rem;
   font-weight: 700;
+}
+
+h3 {
+  color: var(--accent-color);
+  margin-top: 2rem;
+  font-weight: 700;
+}
+
+.network-visualization img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .network-visualization {
@@ -131,135 +147,76 @@ h2 {
 }
 </style>
 
+<header>
+  <h1>Enron Network Analysis</h1>
+  <p class="subtitle">Exploring the Enron dataset with Natural Language Processing</p>
+</header>
+
 ## Introduction
 
-The Enron Email Dataset comprises approximately 500,000 emails from around 6000 Enron employees, primarily executives, spanning 1998 to 2002. Released during the FERC investigation into Enron's collapse
+The Enron Email Dataset comprises approximately 500,000 emails from around 6,000 Enron employees, primarily executives, spanning 1998 to 2002. Released during the FERC investigation into Enron’s collapse, this corpus provides a unique window into corporate communications at a momentous moment in modern business history.
 
+---
 
+## Network Analysis
 
-## Overview
+### Centrality Scores
 
-This project aims analyzes the communication network within Enron Corporation using email data, focusing on identifying key employees and understanding their communication patterns. By uncovering structural patterns and potential anomalies in corporate communication, the goal is to better understand how such networks operate—and how similar analyses could help detect and prevent future corporate scandals.
+Centrality measures quantify how “important” or well-connected a node is within the network. Here we look at degree, closeness, and eigenvector centralities to highlight the top communicators.
 
-
-
-
-## Network Visualization
-<figure>
-  <img src="images/networkgraph.png" alt="Force-directed layout of Enron email network" />
-  <figcaption>Figure 1. Enron email network: node size ∝ number of unique contacts.</figcaption>
+<figure class="network-visualization">
+  <img src="images/centrality.png" alt="Centrality scores in the Enron network">
+  <figcaption>Figure X. Top centrality scores.</figcaption>
 </figure>
 
-The network visualization shows the communication patterns between Enron employees. Each node represents an employee, and each edge represents an email communication. The visualization highlights the most active communicators in the network.
+### Betweenness Score
 
+Betweenness centrality shows which employees act as bridges on the shortest paths between others—key for detecting information bottlenecks.
 
-
-## Methodology
-
-### Data Collection and Preprocessing
-The analysis is based on the Enron Email Dataset, which contains approximately 500,000 internal emails from around 6000 Enron employees spanning 1998 to 2002. The dataset was released by the Federal Energy Regulatory Commission (FERC) during investigations into Enron's collapse.
-
-### Data Cleaning Pipeline
-To create a high-quality network for analysis, we implemented a rigorous data cleaning process:
-
-1. **Initial Filtering**
-   - Removed incomplete records (emails missing sender, recipient, subject, or body)
-   - Eliminated malformed or empty messages
-   - Resulted in removal of 21.54% of the original dataset
-
-2. **Automated Traffic Removal**
-   - Filtered out system-generated emails and broadcast lists
-   - Removed messages from automated sources (payroll, distribution lists, announcements)
-   - Excluded "team.*" groups and similar automated channels
-
-3. **Communication Network Refinement**
-   - Removed self-sent emails
-   - Limited analysis to employees with significant communication activity
-   - Applied threshold of minimum 100 sent and received emails per employee
-
-### Network Analysis
-The cleaned dataset was analyzed using the following tools and metrics:
-
-- **Network Construction**: Built using NetworkX library
-- **Centrality Measures**: 
-  - Degree centrality
-  - Betweenness centrality
-  - Closeness centrality
-  - Community detection
-- **Visualization**: Created using nxviz and matplotlib
-- **Statistical Analysis**: Conducted using pandas and numpy
-
-### Final Dataset Characteristics
-After preprocessing:
-- **Active Employees**: 222
-- **Total Email Connections**: 78,458
-- **Time Period**: 1998-2002
-
-
-## Key Findings
-Centrality scores quantify the importance or influence of a node within a network based on its position and connections. After calculating these scores for the Enron employees, we found that Sara Shackleton, Tana Jones, and Mark Taylor, Louise Kitchens and Elizabeth Sager emerged as the most central figures in the communication network.
-<figure>
-  <img src="images/centrality.png" alt="Centrality of the Enron dataset" />
-  <figcaption>Figure 1. Enron email network: node size ∝ number of unique contacts.</figcaption>
+<figure class="network-visualization">
+  <img src="images/betweenness.png" alt="Betweenness centrality in the Enron network">
+  <figcaption>Figure Y. Nodes with highest betweenness.</figcaption>
 </figure>
 
+### Community Detection
 
-### Most Central Communicators
-The following employees were identified as the most central in the communication network:
+Using the Louvain method, we partitioned the network into six densely-connected clusters, reflecting functional or departmental groupings within Enron.
 
-1. [Sara Shackleton, President for Enron North America]
-2. [Tana Jones, Negotiator at Enron Capital and Trade Resources ]
-3. [Louise Kitchens, COO]
-4. [Mark Taylor, Vice President]
-5. [Elizabeth Sager, Chief Lawyer 5]
-
-
-## Betweenness Score
-
-Betweenness centrality measures how often a node appears on the shortest paths between other nodes, indicating its role as a bridge within the network. While many familiar names reappear in this ranking, a new key figure—Sally Beck—also emerges, highlighting her strategic position in the flow of information.
-<figure>
-  <img src="images/betweenness.png" alt="Centrality of the Enron dataset" />
-  <figcaption>Figure 1. Enron email network: node size ∝ number of unique contacts.</figcaption>
+<figure class="network-visualization">
+  <img src="images/communities.png" alt="Detected communities in the Enron network">
+  <figcaption>Figure Z. Enron email communities.</figcaption>
 </figure>
 
-## Community Detection
+---
 
-In social networks, community detection helps identify groups of nodes that are more densely connected to each other than to the rest of the network—often reflecting organizational units or shared functions. In the Enron dataset, we detected 6 distinct communities, each representing clusters of employees with strong internal communication ties. To calculate the communities, we used the Louvain method. 
+## Further Investigation
 
+Here you can outline additional analyses (NLP topic modeling, temporal dynamics, anomaly detection, etc.) or link to interactive dashboards.
 
+---
 
+## Key Statistics
 
-
-
-
-
-### Network Statistics
 <div class="stats-grid">
   <div class="stat-card">
-    <div class="stat-number">[Number]</div>
-    <div>Total Employees</div>
+    <div class="stat-number">140</div>
+    <div>Active Employees</div>
   </div>
   <div class="stat-card">
-    <div class="stat-number">[Number]</div>
-    <div>Email Connections</div>
+    <div class="stat-number">16000</div>
+    <div>Emails</div>
   </div>
   <div class="stat-card">
-    <div class="stat-number">[Number]</div>
-    <div>Avg. psyko</div>
+    <div class="stat-number">6</div>
+    <div>Detected Communities</div>
   </div>
 </div>
-The analysis focused on identifying key communicators and understanding communication patterns within the organization, with particular attention to the network structure and individual influence within the corporate hierarchy.
 
-## Data Source
-The analysis is based on the Enron email dataset, which contains internal communications from Enron Corporation.
+---
 
-## Code
-The analysis code is available in the [GitHub repository](https://github.com/cwarburg/enron-network-analysis).
-
-## Dataset
-the dataset is available on [kaggle](https://www.kaggle.com/datasets/wcukierski/enron-email-dataset/data)
+## Contact
 
 <div class="contact-section">
-  <h2> Contact</h2>
-  <p>This project was made by Christian Warburg s225083 and Sofus Carstens s22for the Course Computational Social Science  .</p>
+  <h2>Contact</h2>
+  <p>This project was made by Christian Warburg (s225083) and Sofus Carstens (s22…) for the Computational Social Science course.</p>
 </div>
