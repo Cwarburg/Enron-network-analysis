@@ -214,31 +214,45 @@ Below we compare the top 5 nodes by **degree** and **eigenvector** centralities 
     <td align="center" valign="top">
       <figure>
         <img src="images/degreecentrality.png" alt="Degree Centrality" width="300"><br>
-        <figcaption><em>Figure 1.</em> Top 5 Degree Centrality Scores.</figcaption>
+        <figcaption><em>Figure 2.</em> Top 5 Degree Centrality Scores.</figcaption>
       </figure>
     </td>
     <td align="center" valign="top">
       <figure>
         <img src="images/eigencentrality.png" alt="Eigenvector Centrality" width="300"><br>
-        <figcaption><em>Figure 2.</em> Top 5 Eigenvector Centrality Scores.</figcaption>
+        <figcaption><em>Figure 3.</em> Top 5 Eigenvector Centrality Scores.</figcaption>
       </figure>
     </td>
   </tr>
 </table>
 
+#### Sub‐section: Centrality Insights
+
+Both charts highlight **kitchen-l** and **lavorato-j** as the network’s primary hubs—high‐volume communicators whose partners are also highly connected. The swap between **ward-k** (high message count) and **whalley-g** (strategically influential ties) in the fourth spot illustrates that sheer activity (degree) doesn’t always equate to influence (eigenvector). Overall, combining these measures reveals both the busiest and the most impactful actors in Enron’s executive email network.
+
+
+
 ### Betweenness Score
 
 Betweenness centrality shows which employees act as bridges on the shortest paths between others—key for detecting information bottlenecks.
 
-<figure class="network-visualization">
-  <img src="images/betweenness.png" alt="Betweenness centrality in the Enron network" style="max-width: 100%; height: auto;">
-  <figcaption>Figure Y. Nodes with highest betweenness.</figcaption>
+<figure class="network-visualization" style="max-width: 600px; margin: 2rem auto;">
+  <img src="images/betweenness.png" alt="Betweenness centrality in the Enron network" style="width: 100%; height: auto;">
+  <figcaption>Figure 4. Nodes with highest betweenness.</figcaption>
 </figure>
+
+#### Betweenness Centrality Insights
+
+The betweenness chart highlights **ward-k** as the primary “bridge” in the network—positioned on the most shortest paths between executives. Following him, **grigsby-m**, **dasovich-j**, **presto-k**, and **scott-s** also serve as key intermediaries. These individuals are crucial for information flow, acting as gatekeepers who connect otherwise distant clusters within Enron’s executive communications.  
+
 
 ### Community Detection
 
-Using the Louvain algorithm, we identified six distinct communities in the Enron executive network. The node with the highest degree centrality was John Lavorato, Enron’s COO. Intriguingly, his community also included Kenneth Lay and Jeffrey Skilling—both of whom were later convicted of fraud and insider trading and served prison sentences.
-
+Using the Louvain algorithm, we identified six distinct communities in the Enron executive network. The node with the highest degree centrality was John Lavorato, Enron’s COO. Intriguingly, his community also included [Kenneth Lay ](https://en.wikipedia.org/wiki/Kenneth_Lay )and [Jeffrey Skilling](https://en.wikipedia.org/wiki/Jeffrey_Skilling)—both of whom were later convicted of fraud and insider trading and served prison sentences.
+<figure class="network-visualization" style="max-width: 600px; margin: 2rem auto;">
+  <img src="images/community2.png" alt="Visualization of community 2" style="width: 100%; height: auto;">
+  <figcaption>Figure 4. Nodes with highest betweenness.</figcaption>
+</figure>
 
 ---
 
