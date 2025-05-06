@@ -202,21 +202,13 @@ Together, these methods allow us to pinpoint not only the most influential or ac
 
 Below we compare the top 5 nodes by **degree centrality** and **eigenvector centrality** side by side to highlight the most connected and most influential communicators.
 
-```markdown
-<div class="flex-container" style="display: flex; justify-content: space-around; align-items: center; gap: 1rem; flex-wrap: wrap;">
+### Centrality Scores
 
-  <figure style="text-align: center;">
-    <img src="images/degreecentrality.png" alt="Top 5 Degree Centrality Scores" style="max-width: 100%; height: auto;">
-    <figcaption>Figure 1. Top 5 Degree Centrality Scores.</figcaption>
-  </figure>
-
-  <figure style="text-align: center;">
-    <img src="images/eigencentrality.png" alt="Top 5 Eigenvector Centrality Scores" style="max-width: 100%; height: auto;">
-    <figcaption>Figure 2. Top 5 Eigenvector Centrality Scores.</figcaption>
-  </figure>
-
-</div>
-```
+| Degree Centrality | Eigenvector Centrality |
+| ----------------- | ---------------------- |
+| ![Degree Centrality](images/degreecentrality.png){ width=300px }  
+  **Figure 1.** Top 5 Degree Centrality Scores.  | ![Eigenvector Centrality](images/eigencentrality.png){ width=300px }  
+  **Figure 2.** Top 5 Eigenvector Centrality Scores.  |
 
 
 ### Betweenness Score
@@ -230,45 +222,23 @@ Betweenness centrality shows which employees act as bridges on the shortest path
 
 ### Community Detection
 
-Using the Louvain method, we partitioned the network into six densely-connected clusters, reflecting functional or departmental groupings within Enron.
+Using the Louvain algorithm, we identified six distinct communities in the Enron executive network. The node with the highest degree centrality was John Lavorato, Enron’s COO. Intriguingly, his community also included Kenneth Lay and Jeffrey Skilling—both of whom were later convicted of fraud and insider trading and served prison sentences.
 
-<figure class="network-visualization">
-  <img src="images/communities.png" alt="Detected communities in the Enron network">
-  <figcaption>Figure Z. Enron email communities.</figcaption>
-</figure>
+
 
 ---
 
-## Further Investigation
+## Further Investigation and NLP
 
-Here you can outline additional analyses (NLP topic modeling, temporal dynamics, anomaly detection, etc.) or link to interactive dashboards.
-
----
-
-## Key Statistics
-
-<div class="stats-grid">
-  <div class="stat-card">
-    <div class="stat-number">140</div>
-    <div>Active Employees</div>
-  </div>
-  <div class="stat-card">
-    <div class="stat-number">16000</div>
-    <div>Emails</div>
-  </div>
-  <div class="stat-card">
-    <div class="stat-number">6</div>
-    <div>Detected Communities</div>
-  </div>
-</div>
+In this part, we want to determine if the the sentiment of Kenneth Lay and J- skillinger changed during the collapse of enron.
 
 ---
+
+
+
 ## Data Sources
-<div class="contact-section">
-  <h2>Contact</h2>
-  <p>The dataset can be downloaded from [Kaggle](https://www.kaggle.com/datasets/rcmonteiro/structured-enron-dataset/data).</p>
-</div>
 
+The dataset can be downloaded from [Kaggle](https://www.kaggle.com/datasets/rcmonteiro/structured-enron-dataset/data).
 
 ## Contact
 
