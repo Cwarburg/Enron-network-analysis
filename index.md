@@ -163,7 +163,10 @@ In this project, we focus on the subset of 150 executive-level employees, transf
 
 ## Network Analysis
 
-![Graph of the complete network of all executives](images/completenetwork.png)
+<figure class="network-visualization">
+  <img src="images/completenetwork.png" alt="Graph of the complete network of all executives" style="max-width: 100%; height: auto;">
+  <figcaption>Figure 1. Graph of the complete network of all executives.</figcaption>
+</figure>
 
 *Figure 1. Graph of the complete network of all executives.*
 
@@ -204,11 +207,11 @@ Below we compare the top 5 nodes by **degree centrality** and **eigenvector cent
 
 ### Centrality Scores
 
-| Degree Centrality | Eigenvector Centrality |
-| ----------------- | ---------------------- |
-| ![Degree Centrality](images/degreecentrality.png){ width=300px }  
-  **Figure 1.** Top 5 Degree Centrality Scores.  | ![Eigenvector Centrality](images/eigencentrality.png){ width=300px }  
-  **Figure 2.** Top 5 Eigenvector Centrality Scores.  |
+| **Degree Centrality** | **Eigenvector Centrality** |
+| ---------------------- | -------------------------- |
+| <img src="images/degreecentrality.png" alt="Degree Centrality" style="width: 300px;">  
+  *Figure 1. Top 5 Degree Centrality Scores.* | <img src="images/eigencentrality.png" alt="Eigenvector Centrality" style="width: 300px;">  
+  *Figure 2. Top 5 Eigenvector Centrality Scores.* |
 
 
 ### Betweenness Score
