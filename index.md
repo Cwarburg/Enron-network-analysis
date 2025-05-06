@@ -207,12 +207,24 @@ Below we compare the top 5 nodes by **degree centrality** and **eigenvector cent
 
 ### Centrality Scores
 
-| **Degree Centrality** | **Eigenvector Centrality** |
-| ---------------------- | -------------------------- |
-| <img src="images/degreecentrality.png" alt="Degree Centrality" style="width: 300px;">  
-  *Figure 1. Top 5 Degree Centrality Scores.* | <img src="images/eigencentrality.png" alt="Eigenvector Centrality" style="width: 300px;">  
-  *Figure 2. Top 5 Eigenvector Centrality Scores.* |
+Below we compare the top 5 nodes by **degree** and **eigenvector** centralities side by side.
 
+<table>
+  <tr>
+    <td align="center" valign="top">
+      <figure>
+        <img src="images/degreecentrality.png" alt="Degree Centrality" width="300"><br>
+        <figcaption><em>Figure 1.</em> Top 5 Degree Centrality Scores.</figcaption>
+      </figure>
+    </td>
+    <td align="center" valign="top">
+      <figure>
+        <img src="images/eigencentrality.png" alt="Eigenvector Centrality" width="300"><br>
+        <figcaption><em>Figure 2.</em> Top 5 Eigenvector Centrality Scores.</figcaption>
+      </figure>
+    </td>
+  </tr>
+</table>
 
 ### Betweenness Score
 
@@ -226,7 +238,6 @@ Betweenness centrality shows which employees act as bridges on the shortest path
 ### Community Detection
 
 Using the Louvain algorithm, we identified six distinct communities in the Enron executive network. The node with the highest degree centrality was John Lavorato, Enron’s COO. Intriguingly, his community also included Kenneth Lay and Jeffrey Skilling—both of whom were later convicted of fraud and insider trading and served prison sentences.
-
 
 
 ---
