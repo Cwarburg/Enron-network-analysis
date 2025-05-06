@@ -163,19 +163,12 @@ In this project, we focus on the subset of 150 executive-level employees, transf
 
 ## Network Analysis
 
-To uncover the key players and structural dynamics within Enron’s executive communication network, we apply three complementary techniques:
+<figure class="network-visualization">
+  <img src="images/completenetwork.png" alt="Graph of the complete network of all executives">
+  <figcaption>Figure 1. Graph of the complete network of all executives.</figcaption>
+</figure>
 
-1. **Centrality Measures**  
-   - **Eigenvector Centrality** identifies nodes connected to other highly influential nodes, highlighting executives whose reach extends through the network’s most powerful hubs.  
-   - **Degree Centrality** (in- and out-degree) reveals who sends the most messages and who receives the most, offering a quantitative measure of activity and visibility.  
 
-2. **Betweenness Centrality**  
-   Betweenness quantifies how often a node lies on the shortest paths between pairs of others. High-betweenness individuals serve as “bridges” or information bottlenecks—critically positioned to control the flow of knowledge or to detect and potentially obscure sensitive topics.
-
-3. **Community Detection**  
-   By partitioning the network into tightly connected groups (or communities), we can spot clusters of executives who communicate more frequently among themselves than with the broader organization. This helps us identify functional teams, informal cliques, or potentially siloed groups that may harbor distinct conversational norms or secretive exchanges.
-
-Together, these methods allow us to pinpoint not only the most influential or active individuals but also the structural gateways and subgroups that shape information flow—and potentially conceal it—within Enron’s executive ranks.  
 
 <div class="stats-grid">
   <div class="stat-card">
@@ -191,15 +184,39 @@ Together, these methods allow us to pinpoint not only the most influential or ac
     <div>Average Degree</div>
   </div>
 </div>
+To uncover the key players and structural dynamics within Enron’s executive communication network, we apply three complementary techniques:
+
+1. **Centrality Measures**  
+   - **Eigenvector Centrality** identifies nodes connected to other highly influential nodes, highlighting executives whose reach extends through the network’s most powerful hubs.  
+   - **Degree Centrality** (in- and out-degree) reveals who sends the most messages and who receives the most, offering a quantitative measure of activity and visibility.  
+
+2. **Betweenness Centrality**  
+   Betweenness quantifies how often a node lies on the shortest paths between pairs of others. High-betweenness individuals serve as “bridges” or information bottlenecks—critically positioned to control the flow of knowledge or to detect and potentially obscure sensitive topics.
+
+3. **Community Detection**  
+   By partitioning the network into tightly connected groups (or communities), we can spot clusters of executives who communicate more frequently among themselves than with the broader organization. This helps us identify functional teams, informal cliques, or potentially siloed groups that may harbor distinct conversational norms or secretive exchanges.
+
+Together, these methods allow us to pinpoint not only the most influential or active individuals but also the structural gateways and subgroups that shape information flow—and potentially conceal it—within Enron’s executive ranks.  
+
 
 ### Centrality Scores
 
-Centrality measures quantify how “important” or well-connected a node is within the network. Here we look at degree, closeness, and eigenvector centralities to highlight the top communicators.
+Below we compare the top 5 nodes by **degree centrality** and **eigenvector centrality** side by side to highlight the most connected and most influential communicators.
 
-<figure class="network-visualization">
-  <img src="images/centrality.png" alt="Centrality scores in the Enron network">
-  <figcaption>Figure X. Top centrality scores.</figcaption>
-</figure>
+<div style="display: flex; justify-content: space-between; align-items: flex-start;">
+
+  <figure style="flex: 1; margin-right: 1em;">
+    <img src="images/degreecentrality.png" alt="Top 5 Degree Centrality Scores" style="width: 100%; height: auto;"/>
+    <figcaption><strong>Figure 1.</strong> Top 5 Degree Centrality Scores.</figcaption>
+  </figure>
+
+  <figure style="flex: 1; margin-left: 1em;">
+    <img src="images/eigencentrality.png" alt="Top 5 Eigenvector Centrality Scores" style="width: 100%; height: auto;"/>
+    <figcaption><strong>Figure 2.</strong> Top 5 Eigenvector Centrality Scores.</figcaption>
+  </figure>
+
+</div>
+
 
 ### Betweenness Score
 
@@ -245,6 +262,12 @@ Here you can outline additional analyses (NLP topic modeling, temporal dynamics,
 </div>
 
 ---
+## Data Sources
+<div class="contact-section">
+  <h2>Contact</h2>
+  <p>The dataset can be downloaded from [Kaggle](https://www.kaggle.com/datasets/rcmonteiro/structured-enron-dataset/data).</p>
+</div>
+
 
 ## Contact
 
