@@ -230,7 +230,7 @@ Using the Louvain algorithm, we identified six distinct communities in the Enron
 
 ## Further Investigation and NLP
 
-In this part, we want to determine if the the sentiment of Kenneth Lay and J- skillinger changed during the collapse of enron.
+In this part, we want to determine if the the sentiment of Kenneth Lay and J. Skilling’s changed during the collapse of enron.
 
 ---
 
