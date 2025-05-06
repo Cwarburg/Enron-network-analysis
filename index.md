@@ -163,10 +163,9 @@ In this project, we focus on the subset of 150 executive-level employees, transf
 
 ## Network Analysis
 
-<figure class="network-visualization">
-  <img src="images/completenetwork.png" alt="Graph of the complete network of all executives">
-  <figcaption>Figure 1. Graph of the complete network of all executives.</figcaption>
-</figure>
+![Graph of the complete network of all executives](images/completenetwork.png)
+
+*Figure 1. Graph of the complete network of all executives.*
 
 
 
@@ -203,19 +202,21 @@ Together, these methods allow us to pinpoint not only the most influential or ac
 
 Below we compare the top 5 nodes by **degree centrality** and **eigenvector centrality** side by side to highlight the most connected and most influential communicators.
 
-<div style="display: flex; justify-content: space-between; align-items: flex-start;">
+```markdown
+<div class="flex-container" style="display: flex; justify-content: space-around; align-items: center; gap: 1rem; flex-wrap: wrap;">
 
-  <figure style="flex: 1; margin-right: 1em;">
-    <img src="images/degreecentrality.png" alt="Top 5 Degree Centrality Scores" style="width: 100%; height: auto;"/>
-    <figcaption><strong>Figure 1.</strong> Top 5 Degree Centrality Scores.</figcaption>
+  <figure style="text-align: center;">
+    <img src="images/degreecentrality.png" alt="Top 5 Degree Centrality Scores" style="max-width: 100%; height: auto;">
+    <figcaption>Figure 1. Top 5 Degree Centrality Scores.</figcaption>
   </figure>
 
-  <figure style="flex: 1; margin-left: 1em;">
-    <img src="images/eigencentrality.png" alt="Top 5 Eigenvector Centrality Scores" style="width: 100%; height: auto;"/>
-    <figcaption><strong>Figure 2.</strong> Top 5 Eigenvector Centrality Scores.</figcaption>
+  <figure style="text-align: center;">
+    <img src="images/eigencentrality.png" alt="Top 5 Eigenvector Centrality Scores" style="max-width: 100%; height: auto;">
+    <figcaption>Figure 2. Top 5 Eigenvector Centrality Scores.</figcaption>
   </figure>
 
 </div>
+```
 
 
 ### Betweenness Score
@@ -223,7 +224,7 @@ Below we compare the top 5 nodes by **degree centrality** and **eigenvector cent
 Betweenness centrality shows which employees act as bridges on the shortest paths between others—key for detecting information bottlenecks.
 
 <figure class="network-visualization">
-  <img src="images/betweenness.png" alt="Betweenness centrality in the Enron network">
+  <img src="images/betweenness.png" alt="Betweenness centrality in the Enron network" style="max-width: 100%; height: auto;">
   <figcaption>Figure Y. Nodes with highest betweenness.</figcaption>
 </figure>
 
