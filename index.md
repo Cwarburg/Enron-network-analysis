@@ -154,11 +154,43 @@ h3 {
 
 ## Introduction
 
-The Enron Email Dataset comprises approximately 500,000 emails from around 6,000 Enron employees, primarily executives, spanning 1998 to 2002. Released during the FERC investigation into Enron’s collapse, this corpus provides a unique window into corporate communications at a momentous moment in modern business history.
+The Enron Email Dataset contains roughly half a million messages exchanged among some 6,000 employees—mostly senior executives—between 1998 and 2002. Originally released during the FERC inquiry into Enron’s collapse, it offers an unparalleled glimpse into the everyday communications and decision-making of a major corporation at a pivotal moment in history.
+
+In this project, we focus on the subset of 150 executive-level employees, transforming their email traffic into a directed social network. By examining this network’s structure and evolution, we aim to surface communication patterns that might signal emerging crises. We then layer in Natural Language Processing—tracking sentiment and topic shifts over time—to explore whether early warning signs of malfeasance can be detected before it’s too late.
+
 
 ---
 
 ## Network Analysis
+
+To uncover the key players and structural dynamics within Enron’s executive communication network, we apply three complementary techniques:
+
+1. **Centrality Measures**  
+   - **Eigenvector Centrality** identifies nodes connected to other highly influential nodes, highlighting executives whose reach extends through the network’s most powerful hubs.  
+   - **Degree Centrality** (in- and out-degree) reveals who sends the most messages and who receives the most, offering a quantitative measure of activity and visibility.  
+
+2. **Betweenness Centrality**  
+   Betweenness quantifies how often a node lies on the shortest paths between pairs of others. High-betweenness individuals serve as “bridges” or information bottlenecks—critically positioned to control the flow of knowledge or to detect and potentially obscure sensitive topics.
+
+3. **Community Detection**  
+   By partitioning the network into tightly connected groups (or communities), we can spot clusters of executives who communicate more frequently among themselves than with the broader organization. This helps us identify functional teams, informal cliques, or potentially siloed groups that may harbor distinct conversational norms or secretive exchanges.
+
+Together, these methods allow us to pinpoint not only the most influential or active individuals but also the structural gateways and subgroups that shape information flow—and potentially conceal it—within Enron’s executive ranks.  
+
+<div class="stats-grid">
+  <div class="stat-card">
+    <div class="stat-number">140</div>
+    <div>Active Employees</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-number">16000</div>
+    <div>Emails</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-number">18.93</div>
+    <div>Average Degree</div>
+  </div>
+</div>
 
 ### Centrality Scores
 
