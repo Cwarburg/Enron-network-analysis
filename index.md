@@ -267,6 +267,7 @@ In this part, we want to determine if the the sentiment of Kenneth Lay and J. Sk
 ## Data Sources
 
 The dataset can be downloaded from [Kaggle](https://www.kaggle.com/datasets/rcmonteiro/structured-enron-dataset/data).
+Our [github](https://github.com/Cwarburg/Enron-network-analysis/tree/main/images)
 
 ## Contact
 
