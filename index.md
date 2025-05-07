@@ -258,9 +258,36 @@ Using the Louvain algorithm, we identified six distinct communities in the Enron
 
 ## Further Investigation and NLP
 
-In this part, we want to determine if the the sentiment of Kenneth Lay and J. Skilling’s changed during the collapse of enron.
+In this part, we want to determine if the sentiment of Kenneth Lay and J. Skilling’s emails changed during the collapse of Enron.
 
 ---
+
+## Sentiment Analysis Over Time
+
+<figure class="network-visualization">
+  <img src="images/sentiment_over_time.png" alt="Average sentiment of top hubs over time" style="max-width: 100%; height: auto;">
+  <figcaption>Figure 8. Average monthly sentiment polarity for top betweenness hubs (Dec 1999–Apr 2002).</figcaption>
+</figure>
+
+Sentiment analysis quantifies the emotional tone of text, assigning each message a polarity score between –1 (very negative) and +1 (very positive). :contentReference[oaicite:0]{index=0} We applied TextBlob’s polarity metric to all emails sent by our top‐10 betweenness nodes, then averaged those scores by month. :contentReference[oaicite:1]{index=1} The resulting time series reveals a modest but meaningful shift: sentiment climbs from slightly negative in early 2000 to peaks around +0.17 in late 2001 before plunging in early 2002. :contentReference[oaicite:2]{index=2}  
+
+This pattern aligns with known corporate events at Enron. :contentReference[oaicite:3]{index=3} The mid-2000 uptick coincides with major new partnerships and strong quarterly earnings announcements, which likely boosted internal morale. :contentReference[oaicite:4]{index=4} Conversely, the sharp drop in spring 2002 corresponds to intensified regulatory scrutiny, auditor turmoil, and the Sarbanes–Oxley legislative push. :contentReference[oaicite:5]{index=5}  
+
+By layering sentiment trends atop our network findings, we can see not only **who** was central to Enron’s communications but also **how** their tone shifted in response to strategic milestones and crises. :contentReference[oaicite:6]{index=6} This combined approach offers a richer view of organizational dynamics—highlighting moments when information flow and emotional tenor converged or diverged. :contentReference[oaicite:7]{index=7}  
+
+---
+
+## Data Sources
+
+The dataset can be downloaded from [Kaggle](https://www.kaggle.com/datasets/rcmonteiro/structured-enron-dataset/data).  
+Our [GitHub](https://github.com/Cwarburg/Enron-network-analysis/tree/main/images).  
+
+## Contact
+
+<div class="contact-section">
+  <h2>Contact</h2>
+  <p>This project was made by Christian Warburg (s225083) and Sofus Carstens (s224959) for the Computational Social Science course.</p>
+</div>
 
 
 
@@ -273,5 +300,5 @@ Our [github](https://github.com/Cwarburg/Enron-network-analysis/tree/main/images
 
 <div class="contact-section">
   <h2>Contact</h2>
-  <p>This project was made by Christian Warburg (s225083) and Sofus Carstens (s22…) for the Computational Social Science course.</p>
+  <p>This project was made by Christian Warburg (s225083) and Sofus Carstens (s224959) for the Computational Social Science course.</p>
 </div>
