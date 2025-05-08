@@ -264,6 +264,10 @@ In this part, we want to determine if the sentiment of Kenneth Lay and J. Skilli
 
 ## Sentiment Analysis Over Time
 
+In the network analysis phase, we computed betweenness centrality for every employee (node) in the Enron executive‐email graph. For this natural language processing part of the analysis we focus on the **10 highest betweenness** individuals. We call these individuals our **top hubs**. By focusing only on the top hubs, we focus on the most strategic information brokers. Tracking sentiment on Enron's key decision makers and gatekeepers outgoing mail only, filtering out background noise of the entire employee base. 
+
+
+
 <figure class="network-visualization">
   <img src="images/sentiment_over_time.png" alt="Average sentiment of top hubs over time" style="max-width: 100%; height: auto;">
   <figcaption>Figure 8. Average monthly sentiment polarity for top betweenness hubs (Dec 1999–Apr 2002).</figcaption>
@@ -276,18 +280,6 @@ This pattern aligns with known corporate events at Enron. :contentReference[oaic
 By layering sentiment trends atop our network findings, we can see not only **who** was central to Enron’s communications but also **how** their tone shifted in response to strategic milestones and crises. :contentReference[oaicite:6]{index=6} This combined approach offers a richer view of organizational dynamics—highlighting moments when information flow and emotional tenor converged or diverged. :contentReference[oaicite:7]{index=7}  
 
 ---
-
-## Data Sources
-
-The dataset can be downloaded from [Kaggle](https://www.kaggle.com/datasets/rcmonteiro/structured-enron-dataset/data).  
-Our [GitHub](https://github.com/Cwarburg/Enron-network-analysis/tree/main/images).  
-
-## Contact
-
-<div class="contact-section">
-  <h2>Contact</h2>
-  <p>This project was made by Christian Warburg (s225083) and Sofus Carstens (s224959) for the Computational Social Science course.</p>
-</div>
 
 
 
