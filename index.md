@@ -264,8 +264,14 @@ In this part, we want to determine if the sentiment of Kenneth Lay and J. Skilli
 
 ## Sentiment Analysis Over Time
 
-In the network analysis phase, we computed betweenness centrality for every employee (node) in the Enron executive‐email graph. For this natural language processing part of the analysis we focus on the **10 highest betweenness** individuals. We call these individuals our **top hubs**. By focusing only on the top hubs, we focus on the most strategic information brokers. Tracking sentiment on Enron's key decision makers and gatekeepers outgoing mail only, filtering out background noise of the entire employee base. 
+Sentiment analysis is the process of automatically determining whether a piece of text expresses a positive, negative, or neutral attitude. By scoring the emotional tone of written language, it lets us quantify how people feel—whether they’re upbeat, anxious, or somewhere in between. For our Enron project, we used a **lexicon-based** approach via **TextBlob’s polarity analyzer**:
 
+1. **Word-level scoring**: Each word in an email is looked up in a built-in dictionary that assigns it a small positive or negative weight.
+2. **Message polarity**: Those word scores are averaged and normalized into a single polarity value between –1.0 (very negative) and +1.0 (very positive).
+
+By using this **lexicon-based** approach, no training data is needed and it gives a clear, continuous measure of tone that we can track over time.
+
+In the network analysis phase, we computed betweenness centrality for every employee (node) in the Enron executive‐email graph. For this natural language processing part of the analysis we focus on the **10 highest betweenness** individuals. We call these individuals our **top hubs**. By focusing only on the top hubs, we focus on the most strategic information brokers. Tracking sentiment on Enron's key decision makers and gatekeepers outgoing mail only, filtering out background noise of the entire employee base. 
 
 
 <figure class="network-visualization">
@@ -273,11 +279,10 @@ In the network analysis phase, we computed betweenness centrality for every empl
   <figcaption>Figure 8. Average monthly sentiment polarity for top betweenness hubs (Dec 1999–Apr 2002).</figcaption>
 </figure>
 
-Sentiment analysis quantifies the emotional tone of text, assigning each message a polarity score between –1 (very negative) and +1 (very positive). :contentReference[oaicite:0]{index=0} We applied TextBlob’s polarity metric to all emails sent by our top‐10 betweenness nodes, then averaged those scores by month. :contentReference[oaicite:1]{index=1} The resulting time series reveals a modest but meaningful shift: sentiment climbs from slightly negative in early 2000 to peaks around +0.17 in late 2001 before plunging in early 2002. :contentReference[oaicite:2]{index=2}  
+We see on the plot that the overall trend is positive (score > 0). This could be due to the **corporate tone bias**. Executive email tends to skew polite, upbeat, and solution-oriented. Even bad news is couched in neutral or euphemistic language (“we’ll need to revisit these numbers” rather than “this is a disaster”), so polarity scores rarely plunge far below zero. In reality a sentiment polarity score of 0.05 to 0.15 is in the lower end for a company.
 
-This pattern aligns with known corporate events at Enron. :contentReference[oaicite:3]{index=3} The mid-2000 uptick coincides with major new partnerships and strong quarterly earnings announcements, which likely boosted internal morale. :contentReference[oaicite:4]{index=4} Conversely, the sharp drop in spring 2002 corresponds to intensified regulatory scrutiny, auditor turmoil, and the Sarbanes–Oxley legislative push. :contentReference[oaicite:5]{index=5}  
+Although Enron filed for bankruptcy on December 2, 2001, our monthly averages don’t show a steady decline beforehand because top executives were still using controlled, neutral‐to‐positive corporate language in their internal emails—focusing on damage control and jargon rather than panic—and any isolated “worried” messages were smoothed out when averaged over hundreds of monthly communications. The decline from 2002-02 to 2002-03 is due to suffcient amount of emails in march 2002.
 
-By layering sentiment trends atop our network findings, we can see not only **who** was central to Enron’s communications but also **how** their tone shifted in response to strategic milestones and crises. :contentReference[oaicite:6]{index=6} This combined approach offers a richer view of organizational dynamics—highlighting moments when information flow and emotional tenor converged or diverged. :contentReference[oaicite:7]{index=7}  
 
 ---
 
