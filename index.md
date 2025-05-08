@@ -269,7 +269,7 @@ In the network analysis phase, we computed betweenness centrality for every empl
 
 
 <figure class="network-visualization">
-  <img src="images/sentiment_over_time.png" alt="Average sentiment of top hubs over time" style="max-width: 100%; height: auto;">
+  <img src="images/sentimentovertime.png" alt="Average sentiment of top hubs over time" style="max-width: 100%; height: auto;">
   <figcaption>Figure 8. Average monthly sentiment polarity for top betweenness hubs (Dec 1999–Apr 2002).</figcaption>
 </figure>
 
