@@ -283,6 +283,8 @@ We see on the plot that the overall trend is positive (score > 0). This could be
 
 Although Enron filed for bankruptcy on December 2, 2001, our monthly averages don’t show a steady decline beforehand because top executives were still using controlled, neutral‐to‐positive corporate language in their internal emails—focusing on damage control and jargon rather than panic—and any isolated “worried” messages were smoothed out when averaged over hundreds of monthly communications. The decline from 2002-02 to 2002-03 is due to suffcient amount of emails in march 2002.
 
+Another factor to consider is that TextBlobs sentiment polarity score uses a general-purpose sentiment dictionary that isnt necessarily tuned for corporate jargon. Words like “restructuring” or “liability” may get neutral or lightly scored values, even when they carry heavy negative connotations in an earnings call or legal context. TextBlob also treats each word independently and averages them, so it wont cacth irony or the subtle framing, top executives use to soften bad news. Furthermore if an email is just “Approved.” or a long, detailed memo, its overall score tends to stay neutral, so any urgent words hidden in the middle can go unnoticed.
+
 
 ---
 
