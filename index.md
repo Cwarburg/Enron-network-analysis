@@ -421,8 +421,22 @@ Below are the top 10 TF–IDF terms for Kenneth Lay and Jeffrey Skilling, along 
     </tr>
     <tr>
       <td style="border:1px solid #ccc; padding:8px;"><strong>scott-s</strong></td>
-      <td style="border:1px solid #ccc; padding:8px;">negotiated rate, recipients date, holst recipients, attachment foll
-
+      <td style="border:1px solid #ccc; padding:8px;">negotiated rate, recipients date, holst recipients, attachment follows, inline attachment</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:8px;"><strong>symes-k</strong></td>
+      <td style="border:1px solid #ccc; padding:8px;">dow jones, cross portfolio, jones index, index prices, database access</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:8px;"><strong>ward-k</strong></td>
+      <td style="border:1px solid #ccc; padding:8px;">master purchase, sale agreement, let know, purchase sale, city glendale</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:8px;"><strong>williams-j</strong></td>
+      <td style="border:1px solid #ccc; padding:8px;">louis dreyfus, covers physical, financial trading, best regards, natural gas</td>
+    </tr>
+  </tbody>
+</table>
 
 
 ## Data Sources
