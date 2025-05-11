@@ -276,7 +276,7 @@ In the network analysis phase, we computed betweenness centrality for every empl
 
 <figure class="network-visualization">
   <img src="images/sentimentovertime.png" alt="Average sentiment of top hubs over time" style="max-width: 100%; height: auto;">
-  <figcaption>Figure 8. Average monthly sentiment polarity for top betweenness hubs (Dec 1999–Apr 2002).</figcaption>
+  <figcaption>Figure 8. Average monthly sentiment polarity for top betweenness hubs (Jan 2000–Apr 2002).</figcaption>
 </figure>
 
 We see on the plot that the overall trend is positive (score > 0). This could be due to the **corporate tone bias**. Executive email tends to skew polite, upbeat, and solution-oriented. Even bad news is couched in neutral or euphemistic language (“we’ll need to revisit these numbers” rather than “this is a disaster”), so polarity scores rarely plunge far below zero. In reality a sentiment polarity score of 0.05 to 0.15 is in the lower end for a company.
@@ -284,6 +284,24 @@ We see on the plot that the overall trend is positive (score > 0). This could be
 Although Enron filed for bankruptcy on December 2, 2001, our monthly averages don’t show a steady decline beforehand because top executives were still using controlled, neutral‐to‐positive corporate language in their internal emails—focusing on damage control and jargon rather than panic—and any isolated “worried” messages were smoothed out when averaged over hundreds of monthly communications. The decline from 2002-02 to 2002-03 is due to suffcient amount of emails in march 2002.
 
 Another factor to consider is that TextBlobs sentiment polarity score uses a general-purpose sentiment dictionary that isnt necessarily tuned for corporate jargon. Words like “restructuring” or “liability” may get neutral or lightly scored values, even when they carry heavy negative connotations in an earnings call or legal context. TextBlob also treats each word independently and averages them, so it wont cacth irony or the subtle framing, top executives use to soften bad news. Furthermore if an email is just “Approved.” or a long, detailed memo, its overall score tends to stay neutral, so any urgent words hidden in the middle can go unnoticed.
+
+
+## Hub-Specific Keywords
+
+Below are the top 10 distinctive terms for each of our top-10 “hub” executives, extracted via TF–IDF (common corporate boilerplate and names removed):
+
+| Hub         | Top 10 TF–IDF Terms                                                      |
+|-------------|---------------------------------------------------------------------------|
+| **dasovich-j**  | edison, california, assembly, power, state, said, best, davis, senate, energy  |
+| **forney-j**    | texas, smith, address, load, thanks, control, working, know, phone             |
+| **grigsby-m**   | mail, gas, thanks, know, afghanistan, let, meeting, taleban, october, tuesday  |
+| **kitchen-l**   | kitchen, fastow, agency, dkrunnfusz, lon, stock, company, said, partnerships, david |
+| **lavorato-j**  | lavorato, gas, var, kitchen, delainey, enronxgate, october, think, greg, tuesday |
+| **presto-k**    | vepco, com, enron, lavorato, ubs, trading, day, hourly, energy, power          |
+| **scott-s**     | transwestern, rate, know, agreement, tariff, commission, ferc, gas, kholst, mary|
+| **symes-k**     | deal, deals, semperger, kroum, dow, like, thanks, jones, know, let             |
+| **ward-k**      | gas, thanks, know, houston, srpnet, agreement, let, marussel, master, shackleton|
+| **williams-j**  | gas, ncpa, monterrey, thanks, credit, energy, trading, mexico, covers, physical|
 
 
 ---
