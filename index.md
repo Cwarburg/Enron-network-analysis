@@ -447,7 +447,7 @@ The bigram results sharpen our view of each executive’s key concerns by reveal
 
 By surfacing these bigrams expressions, we not only confirm each hub’s expertise but also pinpoint the precise topics, trading platforms, grid alerts, and strategic partnerships, that could serve as early indicators of shifts in Enron’s fortunes.
 
-## ## Top Bigram Topics for Kenneth Lay and Jeffrey Skilling
+## Top Bigram Topics for Kenneth Lay and Jeffrey Skilling
 
 ## Executive Bigram Highlights
 
