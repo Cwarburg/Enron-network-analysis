@@ -290,19 +290,22 @@ Another factor to consider is that TextBlobs sentiment polarity score uses a gen
 
 Below are the top 10 distinctive terms for each of our top-10 “hub” executives, extracted via TF–IDF (common corporate boilerplate and names removed):
 
-| Hub         | Top 10 TF–IDF Terms                                                      |
-|-------------|---------------------------------------------------------------------------|
-| **dasovich-j**  | edison, california, assembly, power, state, said, best, davis, senate, energy  |
-| **forney-j**    | texas, smith, address, load, thanks, control, working, know, phone             |
-| **grigsby-m**   | mail, gas, thanks, know, afghanistan, let, meeting, taleban, october, tuesday  |
-| **kitchen-l**   | kitchen, fastow, agency, dkrunnfusz, lon, stock, company, said, partnerships, david |
-| **lavorato-j**  | lavorato, gas, var, kitchen, delainey, enronxgate, october, think, greg, tuesday |
-| **presto-k**    | vepco, com, enron, lavorato, ubs, trading, day, hourly, energy, power          |
-| **scott-s**     | transwestern, rate, know, agreement, tariff, commission, ferc, gas, kholst, mary|
-| **symes-k**     | deal, deals, semperger, kroum, dow, like, thanks, jones, know, let             |
-| **ward-k**      | gas, thanks, know, houston, srpnet, agreement, let, marussel, master, shackleton|
-| **williams-j**  | gas, ncpa, monterrey, thanks, credit, energy, trading, mexico, covers, physical|
+## Hub-Specific Keywords & Roles
 
+Below are the top 10 distinctive terms and the primary role of each of our top-10 “hub” executives:
+
+| Hub           | Top 10 TF–IDF Terms                                                        | Role                                       |
+|---------------|-----------------------------------------------------------------------------|--------------------------------------------|
+| **dasovich-j**  | edison, california, assembly, power, state, said, best, davis, senate, energy    | VP, Government Affairs (California)        |
+| **forney-j**    | texas, smith, address, load, thanks, control, working, know, phone               | ERCOT Operations Manager                   |
+| **grigsby-m**   | mail, gas, thanks, know, afghanistan, let, meeting, taleban, october, tuesday    | Gas Market Trader                          |
+| **kitchen-l**   | kitchen, fastow, agency, dkrunnfusz, lon, stock, company, said, partnerships, david | Strategic Partnerships Lead                |
+| **lavorato-j**  | lavorato, gas, var, kitchen, delainey, enronxgate, october, think, greg, tuesday   | COO, Gas Pipeline & Trading                |
+| **presto-k**    | vepco, com, enron, lavorato, ubs, trading, day, hourly, energy, power            | Power Trader                               |
+| **scott-s**     | transwestern, rate, know, agreement, tariff, commission, ferc, gas, kholst, mary  | Pipeline Regulatory Manager                |
+| **symes-k**     | deal, deals, semperger, kroum, dow, like, thanks, jones, know, let               | Deal Structuring Manager                   |
+| **ward-k**      | gas, thanks, know, houston, srpnet, agreement, let, marussel, master, shackleton  | Gas Supply Agreements Manager              |
+| **williams-j**  | gas, ncpa, monterrey, thanks, credit, energy, trading, mexico, covers, physical   | Mexico Gas Trading Manager                 |
 
 ---
 
