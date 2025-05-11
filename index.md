@@ -286,13 +286,13 @@ Although Enron filed for bankruptcy on December 2, 2001, our monthly averages do
 Another factor to consider is that TextBlobs sentiment polarity score uses a general-purpose sentiment dictionary that isnt necessarily tuned for corporate jargon. Words like “restructuring” or “liability” may get neutral or lightly scored values, even when they carry heavy negative connotations in an earnings call or legal context. TextBlob also treats each word independently and averages them, so it wont cacth irony or the subtle framing, top executives use to soften bad news. Furthermore if an email is just “Approved.” or a long, detailed memo, its overall score tends to stay neutral, so any urgent words hidden in the middle can go unnoticed.
 
 
-## Hub-Specific Keywords
+# TF-IDF Analysis
+In this section, we surface each executive’s most distinctive vocabulary using TF–IDF (Term Frequency–Inverse Document Frequency). TF–IDF highlights words that appear frequently in one person’s emails but are rare across the broader group, revealing the topics each hub truly focuses on whether that’s regulatory affairs, power trading, or pipeline tariffs. By comparing these keyword profiles, we gain a clearer view of who drives what conversations within Enron’s leadership network.
 
-Below are the top 10 distinctive terms for each of our top-10 “hub” executives, extracted via TF–IDF (common corporate boilerplate and names removed):
 
-## TF-IDF Terms for Top 10 Hubs
+## TF-IDF Keywords for Top 10 Hubs
 
-Below are the top 10 distinctive terms and the primary role of each of our top-10 “hub” executives:
+Below are the top 10 distinctive terms and the primary role of each of our top-10 hub executives. Common stopwords, personal names, and email artifacts have been removed to focus on their core business topics:
 
 
 <table style="width:100%; border-collapse: collapse; margin-bottom: 2rem;">
@@ -357,9 +357,9 @@ Below are the top 10 distinctive terms and the primary role of each of our top-1
   </tbody>
 </table>
 
----
+The TF–IDF results confirm the role of each executive. For example, Joseph Dasovich’s standout terms “California,” “assembly,” and “senate”—highlight his focused work on regulatory affairs, while Louise Kitchen’s “partnerships” and “agency” keywords point to her role in strategic joint ventures and investor relations. On the trading side, John Lavorato’s mix of risk-management language (fx “VaR”) and platform references like “EnronXGate” contrasts with Thomas Presto’s terms such as “hourly,” “energy,” and “Vepco,” reflecting their distinct desks in pipeline operations versus power trading. These stylistic and topical fingerprints not only validate why these individuals emerged as communication hubs, but also set the stage for tracking how shifts in subject matter, like a sudden rise in “audit” or “liability” could signal early signs of internal stress.
 
-## TF-IDF Terms for Kenneth Lay and Jeffrey Skilling
+## TF-IDF Keywords for Kenneth Lay and Jeffrey Skilling
 
 Below are the top 10 TF–IDF terms for Kenneth Lay and Jeffrey Skilling, along with their roles at Enron:
 
@@ -384,6 +384,45 @@ Below are the top 10 TF–IDF terms for Kenneth Lay and Jeffrey Skilling, along 
     </tr>
   </tbody>
 </table>
+
+## Top Bigram Topics per Hub
+
+<table style="width:100%; border-collapse: collapse; margin-bottom: 2rem;">
+  <thead>
+    <tr>
+      <th style="border:1px solid #ccc; padding:8px; text-align:left;">Hub</th>
+      <th style="border:1px solid #ccc; padding:8px; text-align:left;">Top 5 Bigrams</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border:1px solid #ccc; padding:8px;"><strong>dasovich-j</strong></td>
+      <td style="border:1px solid #ccc; padding:8px;">direct access, power authority, cpuc gov, richard shapiro, stranded costs</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:8px;"><strong>forney-j</strong></td>
+      <td style="border:1px solid #ccc; padding:8px;">phone numbers, wednesday september, monday august, real time, herndon rogers</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:8px;"><strong>grigsby-m</strong></td>
+      <td style="border:1px solid #ccc; padding:8px;">strategy meeting, fundamental analysis, analysis strategy, file attached, portland fundamental</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:8px;"><strong>kitchen-l</strong></td>
+      <td style="border:1px solid #ccc; padding:8px;">dkrunnfusz agency, kitchen lon, forwarded kitchen, dow jones, wall street</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:8px;"><strong>lavorato-j</strong></td>
+      <td style="border:1px solid #ccc; padding:8px;">epmi short, issue comes, october lavorato, epmi long, november lavorato</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:8px;"><strong>presto-k</strong></td>
+      <td style="border:1px solid #ccc; padding:8px;">hourly index, new albany, meeting vepco, loss calc, non delivery</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:8px;"><strong>scott-s</strong></td>
+      <td style="border:1px solid #ccc; padding:8px;">negotiated rate, recipients date, holst recipients, attachment foll
+
 
 
 ## Data Sources
