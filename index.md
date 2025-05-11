@@ -460,8 +460,6 @@ By surfacing these bigrams expressions, we not only confirm each hub’s experti
 
 ## Top Bigram Topics for Kenneth Lay and Jeffrey Skilling
 
-## Executive Bigram Highlights
-
 <table style="width:100%; border-collapse: collapse; margin-bottom: 2rem;">
   <thead>
     <tr>
