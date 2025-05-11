@@ -294,18 +294,68 @@ Below are the top 10 distinctive terms for each of our top-10 “hub” executiv
 
 Below are the top 10 distinctive terms and the primary role of each of our top-10 “hub” executives:
 
-| Hub           | Top 10 TF–IDF Terms                                                        | Role                                       |
-|---------------|-----------------------------------------------------------------------------|--------------------------------------------|
-| **dasovich-j**  | edison, california, assembly, power, state, said, best, davis, senate, energy    | VP, Government Affairs (California)        |
-| **forney-j**    | texas, smith, address, load, thanks, control, working, know, phone               | ERCOT Operations Manager                   |
-| **grigsby-m**   | mail, gas, thanks, know, afghanistan, let, meeting, taleban, october, tuesday    | Gas Market Trader                          |
-| **kitchen-l**   | kitchen, fastow, agency, dkrunnfusz, lon, stock, company, said, partnerships, david | Strategic Partnerships Lead                |
-| **lavorato-j**  | lavorato, gas, var, kitchen, delainey, enronxgate, october, think, greg, tuesday   | COO, Gas Pipeline & Trading                |
-| **presto-k**    | vepco, com, enron, lavorato, ubs, trading, day, hourly, energy, power            | Power Trader                               |
-| **scott-s**     | transwestern, rate, know, agreement, tariff, commission, ferc, gas, kholst, mary  | Pipeline Regulatory Manager                |
-| **symes-k**     | deal, deals, semperger, kroum, dow, like, thanks, jones, know, let               | Deal Structuring Manager                   |
-| **ward-k**      | gas, thanks, know, houston, srpnet, agreement, let, marussel, master, shackleton  | Gas Supply Agreements Manager              |
-| **williams-j**  | gas, ncpa, monterrey, thanks, credit, energy, trading, mexico, covers, physical   | Mexico Gas Trading Manager                 |
+
+<table style="width:100%; border-collapse: collapse; margin-bottom: 2rem;">
+  <thead>
+    <tr>
+      <th style="border:1px solid #ccc; padding:8px; text-align:left;">Hub</th>
+      <th style="border:1px solid #ccc; padding:8px; text-align:left;">Top 10 TF–IDF Terms</th>
+      <th style="border:1px solid #ccc; padding:8px; text-align:left;">Role</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border:1px solid #ccc; padding:8px;"><strong>dasovich-j</strong></td>
+      <td style="border:1px solid #ccc; padding:8px;">edison, california, assembly, power, state, said, best, davis, senate, energy</td>
+      <td style="border:1px solid #ccc; padding:8px;">VP, Government Affairs (California)</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:8px;"><strong>forney-j</strong></td>
+      <td style="border:1px solid #ccc; padding:8px;">texas, smith, address, load, thanks, control, working, know, phone</td>
+      <td style="border:1px solid #ccc; padding:8px;">ERCOT Operations Manager</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:8px;"><strong>grigsby-m</strong></td>
+      <td style="border:1px solid #ccc; padding:8px;">mail, gas, thanks, know, afghanistan, let, meeting, taleban, october, tuesday</td>
+      <td style="border:1px solid #ccc; padding:8px;">Gas Market Trader</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:8px;"><strong>kitchen-l</strong></td>
+      <td style="border:1px solid #ccc; padding:8px;">kitchen, fastow, agency, dkrunnfusz, lon, stock, company, said, partnerships, david</td>
+      <td style="border:1px solid #ccc; padding:8px;">Strategic Partnerships Lead</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:8px;"><strong>lavorato-j</strong></td>
+      <td style="border:1px solid #ccc; padding:8px;">lavorato, gas, var, kitchen, delainey, enronxgate, october, think, greg, tuesday</td>
+      <td style="border:1px solid #ccc; padding:8px;">COO, Gas Pipeline & Trading</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:8px;"><strong>presto-k</strong></td>
+      <td style="border:1px solid #ccc; padding:8px;">vepco, trading, hourly, energy, power, day, new, ubs, enron, lavorato</td>
+      <td style="border:1px solid #ccc; padding:8px;">Power Trader</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:8px;"><strong>scott-s</strong></td>
+      <td style="border:1px solid #ccc; padding:8px;">transwestern, rate, agreement, tariff, commission, ferc, gas, kholst, mary, know</td>
+      <td style="border:1px solid #ccc; padding:8px;">Pipeline Regulatory Manager</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:8px;"><strong>symes-k</strong></td>
+      <td style="border:1px solid #ccc; padding:8px;">deal, deals, semperger, kroum, dow, like, thanks, jones, know, let</td>
+      <td style="border:1px solid #ccc; padding:8px;">Deal Structuring Manager</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:8px;"><strong>ward-k</strong></td>
+      <td style="border:1px solid #ccc; padding:8px;">gas, agreement, master, srpnet, shackleton, let, houston, thanks, know, marussel</td>
+      <td style="border:1px solid #ccc; padding:8px;">Gas Supply Agreements Manager</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:8px;"><strong>williams-j</strong></td>
+      <td style="border:1px solid #ccc; padding:8px;">gas, credit, energy, trading, mexico, monterrey, ncpa, covers, physical, thanks</td>
+      <td style="border:1px solid #ccc; padding:8px;">Mexico Gas Trading Manager</td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
@@ -313,11 +363,27 @@ Below are the top 10 distinctive terms and the primary role of each of our top-1
 
 Below are the top 10 TF–IDF terms for Kenneth Lay and Jeffrey Skilling, along with their roles at Enron:
 
-| Hub                   | Top 10 TF–IDF Terms                                            | Role                     |
-|-----------------------|----------------------------------------------------------------|--------------------------|
-| **Kenneth Lay**       | stock, grant, company, group, lay, doing, trading, years, monday, meeting   | Chairman & CEO           |
-| **Jeffrey Skilling**  | zero, hope, glad, goal, goes, going, good, goode, governors, grant         | COO & CEO                |
-
+<table style="width:100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="border:1px solid #ccc; padding:8px; text-align:left;">Executive</th>
+      <th style="border:1px solid #ccc; padding:8px; text-align:left;">Top 10 TF–IDF Terms</th>
+      <th style="border:1px solid #ccc; padding:8px; text-align:left;">Role</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border:1px solid #ccc; padding:8px;"><strong>Kenneth Lay</strong></td>
+      <td style="border:1px solid #ccc; padding:8px;">stock, grant, company, group, lay, doing, trading, years, monday, meeting</td>
+      <td style="border:1px solid #ccc; padding:8px;">Chairman & CEO</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:8px;"><strong>Jeffrey Skilling</strong></td>
+      <td style="border:1px solid #ccc; padding:8px;">zero, hope, glad, goal, goes, going, good, goode, governors, grant</td>
+      <td style="border:1px solid #ccc; padding:8px;">COO & CEO</td>
+    </tr>
+  </tbody>
+</table>
 
 
 ## Data Sources
