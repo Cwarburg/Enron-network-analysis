@@ -397,48 +397,59 @@ Below are the top five bigrams for each of the top 10 hubs, extracted via TF–I
     <tr>
       <th style="border:1px solid #ccc; padding:8px; text-align:left;">Hub</th>
       <th style="border:1px solid #ccc; padding:8px; text-align:left;">Top 5 Bigrams</th>
+      <th style="border:1px solid #ccc; padding:8px; text-align:left;">Role</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="border:1px solid #ccc; padding:8px;"><strong>dasovich-j</strong></td>
       <td style="border:1px solid #ccc; padding:8px;">direct access, power authority, cpuc gov, richard shapiro, stranded costs</td>
+      <td style="border:1px solid #ccc; padding:8px;">VP, Government Affairs (California)</td>
     </tr>
     <tr>
       <td style="border:1px solid #ccc; padding:8px;"><strong>forney-j</strong></td>
       <td style="border:1px solid #ccc; padding:8px;">phone numbers, wednesday september, monday august, real time, herndon rogers</td>
+      <td style="border:1px solid #ccc; padding:8px;">ERCOT Operations Manager</td>
     </tr>
     <tr>
       <td style="border:1px solid #ccc; padding:8px;"><strong>grigsby-m</strong></td>
       <td style="border:1px solid #ccc; padding:8px;">strategy meeting, fundamental analysis, analysis strategy, file attached, portland fundamental</td>
+      <td style="border:1px solid #ccc; padding:8px;">Gas Market Trader</td>
     </tr>
     <tr>
       <td style="border:1px solid #ccc; padding:8px;"><strong>kitchen-l</strong></td>
       <td style="border:1px solid #ccc; padding:8px;">dkrunnfusz agency, kitchen lon, forwarded kitchen, dow jones, wall street</td>
+      <td style="border:1px solid #ccc; padding:8px;">Strategic Partnerships Lead</td>
     </tr>
     <tr>
       <td style="border:1px solid #ccc; padding:8px;"><strong>lavorato-j</strong></td>
       <td style="border:1px solid #ccc; padding:8px;">epmi short, issue comes, october lavorato, epmi long, november lavorato</td>
+      <td style="border:1px solid #ccc; padding:8px;">COO, Gas Pipeline & Trading</td>
     </tr>
     <tr>
       <td style="border:1px solid #ccc; padding:8px;"><strong>presto-k</strong></td>
       <td style="border:1px solid #ccc; padding:8px;">hourly index, new albany, meeting vepco, loss calc, non delivery</td>
+      <td style="border:1px solid #ccc; padding:8px;">Power Trader</td>
     </tr>
     <tr>
       <td style="border:1px solid #ccc; padding:8px;"><strong>scott-s</strong></td>
       <td style="border:1px solid #ccc; padding:8px;">negotiated rate, recipients date, holst recipients, attachment follows, inline attachment</td>
+      <td style="border:1px solid #ccc; padding:8px;">Pipeline Regulatory Manager</td>
     </tr>
     <tr>
       <td style="border:1px solid #ccc; padding:8px;"><strong>symes-k</strong></td>
       <td style="border:1px solid #ccc; padding:8px;">dow jones, cross portfolio, jones index, index prices, database access</td>
+      <td style="border:1px solid #ccc; padding:8px;">Deal Structuring Manager</td>
     </tr>
     <tr>
       <td style="border:1px solid #ccc; padding:8px;"><strong>ward-k</strong></td>
       <td style="border:1px solid #ccc; padding:8px;">master purchase, sale agreement, let know, purchase sale, city glendale</td>
+      <td style="border:1px solid #ccc; padding:8px;">Gas Supply Agreements Manager</td>
     </tr>
     <tr>
       <td style="border:1px solid #ccc; padding:8px;"><strong>williams-j</strong></td>
       <td style="border:1px solid #ccc; padding:8px;">louis dreyfus, covers physical, financial trading, best regards, natural gas</td>
+      <td style="border:1px solid #ccc; padding:8px;">Mexico Gas Trading Manager</td>
     </tr>
   </tbody>
 </table>
