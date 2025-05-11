@@ -385,7 +385,12 @@ Below are the top 10 TF–IDF terms for Kenneth Lay and Jeffrey Skilling, along 
   </tbody>
 </table>
 
+Kenneth Lay’s keywords—**stock**, **trading**, **company**, **meeting**, and **grant**—highlight his focus on corporate governance, financial performance, and executive compensation. Jeffrey Skilling’s terms—**hope**, **goal**, **zero**, **glad**, and **governors**—reflect his results-driven, motivational leadership and hands-on operational role. Together, these profiles show Lay steering high-level strategy while Skilling drove day-to-day execution.
+
+
 ## Top Bigram Topics per Hub
+
+Below are the top five bigrams for each of the top 10 hubs, extracted via TF–IDF after removing names and stopwords. By focusing on bigrams—paired words like “power authority” or “strategy meeting”—we capture the specific concepts and partnerships driving each executive’s conversations, offering richer insight than single terms alone (unigrams).
 
 <table style="width:100%; border-collapse: collapse; margin-bottom: 2rem;">
   <thead>
@@ -438,6 +443,9 @@ Below are the top 10 TF–IDF terms for Kenneth Lay and Jeffrey Skilling, along 
   </tbody>
 </table>
 
+The bigram results sharpen our view of each executive’s key concerns by revealing the exact phrases they used most often. For example, Joseph Dasovich’s top phrases—“direct access,” “power authority,” and “stranded costs” underline his engagement with California’s energy regulations and cost-recovery debates. In operations, John Forney’s use of “real time” alongside calendar-anchored alerts like “wednesday september” and “monday august” highlights his focus on monitoring and coordinating grid performance down to the hour. On the deal-making front, Greg Grigsby’s recurring “strategy meeting” and “fundamental analysis” point to his work dissecting market fundamentals and structuring trading strategies.
+
+By surfacing these multi word expressions, we not only confirm each hub’s expertise but also pinpoint the precise topics, trading platforms, grid alerts, and strategic partnerships, that could serve as early indicators of shifts in Enron’s fortunes.
 
 ## Data Sources
 
