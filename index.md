@@ -473,17 +473,22 @@ By surfacing these bigrams expressions, we not only confirm each hub’s experti
   </tbody>
 </table>
 
-
 Lay’s bigrams—like “stock option” and “power trading”—highlight his focus on compensation structures and high-level market strategy. Skilling’s more informal phrases—“yes understand” and “happening ken”—reflect his hands-on, real-time management style and quick operational check-ins.
 
 
 # Discussion and conclusion
 
-""Part about network analysis""
+"" Part about network analysis ""
 
 Our sentiment analysis remained consistently above zero largely because executive emails are engineered to sound reassuring—polite, upbeat, and solution-focused—even when discussing bad news. Any genuine anxiety is often couched in neutral jargon and diluted by averaging hundreds of messages each month, so isolated negative tones never drag the monthly mean far below neutral. Moreover, using a generic lexicon (TextBlob) means that corporate specific terms like “liability” or “restructuring” can register as neutral, and the method can’t capture irony or mid-message urgency. 
 
-Extracting each hub’s most distinctive unigrams and bigrams (after stripping boilerplate, names, and acronyms) illuminated the precise domain each executive managed—regulation in California, ERCOT grid operations, pipeline tariffs, power trading in Mexico, and so on. These keyword profiles both validate our centrality findings and provide a thematic roadmap for spotting emergent crisis language.
+"" Part about unigrams and bigrams and TF-IDF ""
+
+"" Part about K lay and J skilling ""
+
+# Future Work
+
+"" what can we improve? ""
 
 
 
