@@ -276,7 +276,7 @@ In the network analysis phase, we computed betweenness centrality for every empl
 
 <figure class="network-visualization">
   <img src="images/sentimentovertime.png" alt="Average sentiment of top hubs over time" style="max-width: 100%; height: auto;">
-  <figcaption>Figure 8. Average monthly sentiment polarity for top betweenness hubs (Jan 2000–Apr 2002).</figcaption>
+  <figcaption>Figure 8. Average monthly sentiment polarity for top betweenness hubs (Dec 1999–Apr 2002).</figcaption>
 </figure>
 
 We see on the plot that the overall trend is positive (score > 0). This could be due to the **corporate tone bias**. Executive email tends to skew polite, upbeat, and solution-oriented. Even bad news is couched in neutral or euphemistic language (“we’ll need to revisit these numbers” rather than “this is a disaster”), so polarity scores rarely plunge far below zero. In reality a sentiment polarity score of 0.05 to 0.15 is in the lower end for a company.
@@ -445,7 +445,47 @@ Below are the top five bigrams for each of the top 10 hubs, extracted via TF–I
 
 The bigram results sharpen our view of each executive’s key concerns by revealing the exact phrases they used most often. For example, Joseph Dasovich’s top phrases—“direct access,” “power authority,” and “stranded costs” underline his engagement with California’s energy regulations and cost-recovery debates. In operations, John Forney’s use of “real time” alongside calendar-anchored alerts like “wednesday september” and “monday august” highlights his focus on monitoring and coordinating grid performance down to the hour. On the deal-making front, Greg Grigsby’s recurring “strategy meeting” and “fundamental analysis” point to his work dissecting market fundamentals and structuring trading strategies.
 
-By surfacing these multi word expressions, we not only confirm each hub’s expertise but also pinpoint the precise topics, trading platforms, grid alerts, and strategic partnerships, that could serve as early indicators of shifts in Enron’s fortunes.
+By surfacing these bigrams expressions, we not only confirm each hub’s expertise but also pinpoint the precise topics, trading platforms, grid alerts, and strategic partnerships, that could serve as early indicators of shifts in Enron’s fortunes.
+
+## ## Top Bigram Topics for Kenneth Lay and Jeffrey Skilling
+
+## Executive Bigram Highlights
+
+<table style="width:100%; border-collapse: collapse; margin-bottom: 2rem;">
+  <thead>
+    <tr>
+      <th style="border:1px solid #ccc; padding:8px; text-align:left;">Executive</th>
+      <th style="border:1px solid #ccc; padding:8px; text-align:left;">Top 5 Bigrams</th>
+      <th style="border:1px solid #ccc; padding:8px; text-align:left;">Role</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border:1px solid #ccc; padding:8px;"><strong>Kenneth Lay</strong></td>
+      <td style="border:1px solid #ccc; padding:8px;">stock option, power trading, trading group, quarterly basis, forward seeing</td>
+      <td style="border:1px solid #ccc; padding:8px;">Chairman & CEO</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ccc; padding:8px;"><strong>Jeffrey Skilling</strong></td>
+      <td style="border:1px solid #ccc; padding:8px;">yes understand, hendrickson free, group yes, guy sounds, happening ken</td>
+      <td style="border:1px solid #ccc; padding:8px;">COO & CEO</td>
+    </tr>
+  </tbody>
+</table>
+
+
+Lay’s bigrams—like “stock option” and “power trading”—highlight his focus on compensation structures and high-level market strategy. Skilling’s more informal phrases—“yes understand” and “happening ken”—reflect his hands-on, real-time management style and quick operational check-ins.
+
+
+# Discussion and conclusion
+
+""Part about network analysis""
+
+Our sentiment analysis remained consistently above zero largely because executive emails are engineered to sound reassuring—polite, upbeat, and solution-focused—even when discussing bad news. Any genuine anxiety is often couched in neutral jargon and diluted by averaging hundreds of messages each month, so isolated negative tones never drag the monthly mean far below neutral. Moreover, using a generic lexicon (TextBlob) means that corporate specific terms like “liability” or “restructuring” can register as neutral, and the method can’t capture irony or mid-message urgency. 
+
+Extracting each hub’s most distinctive unigrams and bigrams (after stripping boilerplate, names, and acronyms) illuminated the precise domain each executive managed—regulation in California, ERCOT grid operations, pipeline tariffs, power trading in Mexico, and so on. These keyword profiles both validate our centrality findings and provide a thematic roadmap for spotting emergent crisis language.
+
+
 
 ## Data Sources
 
