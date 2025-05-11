@@ -264,7 +264,7 @@ In this part, we want to determine if the sentiment of Kenneth Lay and J. Skilli
 
 ## Sentiment Analysis Over Time
 
-Sentiment analysis is the process of automatically determining whether a piece of text expresses a positive, negative, or neutral attitude. By scoring the emotional tone of written language, it lets us quantify how people feel—whether they’re upbeat, anxious, or somewhere in between. For our Enron project, we used a **lexicon-based** approach via **TextBlob’s polarity analyzer**:
+Sentiment analysis is the process of automatically determining whether a piece of text expresses a positive, negative, or neutral attitude. By scoring the emotional tone of written language, it lets us quantify how people feel—whether they’re upbeat, anxious, or somewhere in between. For our Enron project, we used a **lexicon-based** approach via **TextBlob’s sentiment polarity analyzer**:
 
 1. **Word-level scoring**: Each word in an email is looked up in a built-in dictionary that assigns it a small positive or negative weight.
 2. **Message polarity**: Those word scores are averaged and normalized into a single polarity value between –1.0 (very negative) and +1.0 (very positive).
@@ -290,7 +290,7 @@ Another factor to consider is that TextBlobs sentiment polarity score uses a gen
 
 Below are the top 10 distinctive terms for each of our top-10 “hub” executives, extracted via TF–IDF (common corporate boilerplate and names removed):
 
-## Hub-Specific Keywords & Roles
+## TF-IDF Terms for Top 10 Hubs
 
 Below are the top 10 distinctive terms and the primary role of each of our top-10 “hub” executives:
 
@@ -308,6 +308,15 @@ Below are the top 10 distinctive terms and the primary role of each of our top-1
 | **williams-j**  | gas, ncpa, monterrey, thanks, credit, energy, trading, mexico, covers, physical   | Mexico Gas Trading Manager                 |
 
 ---
+
+## TF-IDF Terms for Kenneth Lay and Jeffrey Skilling
+
+Below are the top 10 TF–IDF terms for Kenneth Lay and Jeffrey Skilling, along with their roles at Enron:
+
+| Hub                   | Top 10 TF–IDF Terms                                            | Role                     |
+|-----------------------|----------------------------------------------------------------|--------------------------|
+| **Kenneth Lay**       | stock, grant, company, group, lay, doing, trading, years, monday, meeting   | Chairman & CEO           |
+| **Jeffrey Skilling**  | zero, hope, glad, goal, goes, going, good, goode, governors, grant         | COO & CEO                |
 
 
 
