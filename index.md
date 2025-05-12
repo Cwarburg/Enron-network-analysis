@@ -499,7 +499,7 @@ To build on this analysis, we plan to integrate modern deep-learning techniquesâ
 ## Data Sources
 
 The dataset can be downloaded from [Kaggle](https://www.kaggle.com/datasets/rcmonteiro/structured-enron-dataset/data).
-Our Code is available on our [github](https://github.com/Cwarburg/Enron-network-analysis/tree/main/images)
+Our Code is available on our [github](https://github.com/cwarburg/enron-network-analysis)
 
 ## Enron Dataset & History
 
