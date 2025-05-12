@@ -228,7 +228,7 @@ Both charts highlight **kitchen-l** and **lavorato-j** as the network’s primar
 
 
 
-### Betweenness Score
+## Betweenness Score
 
 Betweenness centrality shows which employees act as bridges on the shortest paths between others—key for detecting information bottlenecks.
 
