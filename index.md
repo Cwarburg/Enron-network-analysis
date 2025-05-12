@@ -238,7 +238,7 @@ Betweenness centrality shows which employees act as bridges on the shortest path
 
 <figure class="network-visualization" style="max-width: 600px; margin: 2rem auto;">
   <img src="images/betweenness.png" alt="Betweenness centrality in the Enron network" style="width: 100%; height: auto;">
-  <figcaption>Figure 4. Nodes with highest betweenness.</figcaption>
+  <figcaption>Figure 4. Community 2 network.</figcaption>
 </figure>
 
 #### Betweenness Centrality Insights
@@ -255,10 +255,6 @@ Using the Louvain algorithm, we identified six distinct communities in the Enron
 </figure>
 
 ---
-
-## Further Investigation and NLP
-
-In this part, we want to determine if the sentiment of Kenneth Lay and J. Skilling’s emails changed during the collapse of Enron.
 
 ---
 
@@ -487,7 +483,8 @@ Lay’s bigrams—like “stock option” and “power trading”—highlight hi
 
 # Discussion and conclusion
 
-"" Part about network analysis ""
+Our executive-level email graph does more than map who wrote to whom; it exposes the hidden architecture that moved information (and, arguably, influence) around Enron in the years leading up to its collapse. We found the employee with the highest betweenness score was Ken Ward (ward-k), meaning he sits on the greatest share of shortest paths and therefore controls most cross-unit information flow. We also discovered that John Lavorato (lavorato-j) held the highest degree score and belonged to the same community as Jeffrey Skilling and Kenneth Lay, which was an intriguing detail, given that both Skilling and Lay later served prison sentences. 
+
 
 Our sentiment analysis remained consistently above zero largely because executive emails are engineered to sound reassuring—polite, upbeat, and solution-focused—even when discussing bad news. Any genuine anxiety is often couched in neutral jargon and diluted by averaging hundreds of messages each month, so isolated negative tones never drag the monthly mean far below neutral. Moreover, using a generic lexicon (TextBlob) means that corporate specific terms like “liability” or “restructuring” can register as neutral, and the method can’t capture irony or mid-message urgency. 
 
