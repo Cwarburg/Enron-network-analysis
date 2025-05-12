@@ -189,7 +189,8 @@ In this project, we focus on the subset of 150 executive-level employees, transf
 To uncover the key players and structural dynamics within Enron’s executive communication network, we apply three complementary techniques:
 
 1. **Centrality Measures**  
-   - **Eigenvector Centrality** identifies nodes connected to other highly influential nodes, highlighting executives whose reach extends through the network’s most powerful hubs.  
+   - **Eigenvector Centrality** Eigenvector centrality measures an executive’s importance by not only counting their direct connections but also weighing how well-connected those contacts are—so it highlights individuals whose influence spreads through the network’s most central figures.
+
    - **Degree Centrality** (in- and out-degree) reveals who sends the most messages and who receives the most, offering a quantitative measure of activity and visibility.  
 
 2. **Betweenness Centrality**  
