@@ -492,7 +492,7 @@ Our TF–IDF unigram and bigram analyses distilled each executive’s core subje
 
 # Future Work
 
-
+To build on this analysis, we plan to integrate modern deep-learning techniques—such as fine-tuned transformer models for nuanced sentiment and topic detection, and graph neural networks to model the Enron email network over time. These approaches could enable early warning of structural shifts or emerging crises by combining text embeddings with dynamic network features. Additionally, anomaly-detection models (e.g., temporal graph autoencoders) could flag sudden deviations in communication patterns.
 
 
 
