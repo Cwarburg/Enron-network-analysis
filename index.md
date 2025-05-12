@@ -501,11 +501,25 @@ Our sentiment analysis remained consistently above zero largely because executiv
 ## Data Sources
 
 The dataset can be downloaded from [Kaggle](https://www.kaggle.com/datasets/rcmonteiro/structured-enron-dataset/data).
-Our [github](https://github.com/Cwarburg/Enron-network-analysis/tree/main/images)
+Our Code is available on our [github](https://github.com/Cwarburg/Enron-network-analysis/tree/main/images)
 
-## Contact
+## Enron Dataset & History
+
+- Klimt, B., & Yang, Y. (2004). *Introducing the Enron Corpus*. https://www.cs.cmu.edu/~enron
+- Diesner, J., Frantz, T., & Carley, K. M. (2005). “Communication Networks from the Enron Email Corpus.” https://doi.org/10.1007/s10588-005-5377-6
+- Britannica. “Enron scandal.” https://www.britannica.com/topic/Enron-Scandal
+
+## Network Analysis Methods
+
+- Brandes, U. (2001). “A Faster Algorithm for Betweenness Centrality.” https://doi.org/10.1080/0022250X.2001.9990249
+- Blondel, V. D., Guillaume, J.-L., Lambiotte, R., & Lefebvre, E. (2008). “Fast Unfolding of Communities in Large Networks.” https://arxiv.org/abs/0803.0476
+- Newman, M. E. J. (2010). *Networks: An Introduction*. Oxford University Press.
+
+## NLP Techniques
+
+- *TextBlob* documentation. https://textblob.readthedocs.io
 
 <div class="contact-section">
   <h2>Contact</h2>
-  <p>This project was made by Christian Warburg (s225083) and Sofus Carstens (s224959) for the Computational Social Science course.</p>
+  <p>This project was made by Christian Warburg (s225083) and Sofus Carstens (s224959) for the Computational Social 02467.</p>
 </div>
