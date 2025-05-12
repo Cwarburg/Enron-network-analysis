@@ -156,7 +156,7 @@ h3 {
 
 The Enron Email Dataset contains roughly half a million messages exchanged among some 6,000 employees—mostly senior executives—between 1998 and 2002. Originally released during the FERC inquiry into Enron’s collapse, it offers an unparalleled glimpse into the everyday communications and decision-making of a major corporation at a pivotal moment in history.
 
-In this project, we focus on the subset of 150 executive-level employees, transforming their email traffic into a directed social network. By examining this network’s structure and evolution, we aim to surface communication patterns that might signal emerging crises. We then layer in Natural Language Processing—tracking sentiment and topic shifts over time—to explore whether early warning signs of malfeasance can be detected before it’s too late.
+In this project, we focus on the subset of 150 executive-level employees, transforming their email traffic into a directed social network. By examining this network’s structure and evolution, we aim to surface communication patterns that might signal emerging crises. We then layer in Natural Language Processing—tracking sentiment over time and multi-word phrases for most influential executives—to explore whether early warning signs of malfeasance can be detected before it’s too late.
 
 
 ---
@@ -223,7 +223,7 @@ Below we compare the top 5 nodes by **degree centrality** and **eigenvector cent
   </tr>
 </table>
 
-#### Sub‐section: Centrality Insights
+#### Centrality Insights
 
 Both charts highlight **kitchen-l** and **lavorato-j** as the network’s primary hubs—high‐volume communicators whose partners are also highly connected. The swap between **ward-k** (high message count) and **whalley-g** (strategically influential ties) in the fourth spot illustrates that sheer activity (degree) doesn’t always equate to influence (eigenvector). Overall, combining these measures reveals both the busiest and the most impactful actors in Enron’s executive email network.
 
@@ -274,9 +274,9 @@ In the network analysis phase, we computed betweenness centrality for every empl
 
 We see on the plot that the overall trend is positive (score > 0). This could be due to the **corporate tone bias**. Executive email tends to skew polite, upbeat, and solution-oriented. Even bad news is couched in neutral or euphemistic language (“we’ll need to revisit these numbers” rather than “this is a disaster”), so polarity scores rarely plunge far below zero. In reality a sentiment polarity score of 0.05 to 0.15 is in the lower end for a company.
 
-Although Enron filed for bankruptcy on December 2, 2001, our monthly averages don’t show a steady decline beforehand because top executives were still using controlled, neutral‐to‐positive corporate language in their internal emails—focusing on damage control and jargon rather than panic—and any isolated “worried” messages were smoothed out when averaged over hundreds of monthly communications. The decline from 2002-02 to 2002-03 is due to suffcient amount of emails in march 2002.
+Although Enron filed for bankruptcy on December 2, 2001, our monthly averages don’t show a steady decline beforehand because top executives were still using controlled, neutral‐to‐positive corporate language in their internal emails—focusing on damage control and jargon rather than panic—and any isolated “worried” messages were smoothed out when averaged over hundreds of monthly communications. The decline from 2002-02 to 2002-03 is due to insuffcient amount of emails in march 2002.
 
-Another factor to consider is that TextBlobs sentiment polarity score uses a general-purpose sentiment dictionary that isnt necessarily tuned for corporate jargon. Words like “restructuring” or “liability” may get neutral or lightly scored values, even when they carry heavy negative connotations in an earnings call or legal context. TextBlob also treats each word independently and averages them, so it wont cacth irony or the subtle framing, top executives use to soften bad news. Furthermore if an email is just “Approved.” or a long, detailed memo, its overall score tends to stay neutral, so any urgent words hidden in the middle can go unnoticed.
+Another factor to consider is that TextBlobs sentiment polarity score uses a general-purpose sentiment dictionary that isnt necessarily tuned for corporate jargon. Words like “restructuring” or “liability” may get neutral or lightly scored values, even when they carry heavy negative connotations in an earnings call or legal context. TextBlob also treats each word independently and averages them, so it wont catch irony or the subtle framing, top executives use to soften bad news. Furthermore if an email is just “Approved.” or a long, detailed memo, its overall score tends to stay neutral, so any urgent words hidden in the middle can go unnoticed.
 
 
 # TF-IDF Analysis
@@ -485,7 +485,10 @@ Our executive-level email graph does more than map who wrote to whom; it exposes
 
 Our sentiment analysis remained consistently above zero largely because executive emails are engineered to sound reassuring—polite, upbeat, and solution-focused—even when discussing bad news. Any genuine anxiety is often couched in neutral jargon and diluted by averaging hundreds of messages each month, so isolated negative tones never drag the monthly mean far below neutral. Moreover, using a generic lexicon (TextBlob) means that corporate specific terms like “liability” or “restructuring” can register as neutral, and the method can’t capture irony or mid-message urgency. 
 
-Our TF–IDF unigram and bigram analyses distilled each executive’s core subject matter—unigrams revealing broad domain areas like “trading,” “regulation,” or “energy,” and bigrams uncovering specific phrases such as “power authority” or “strategy meeting.” These term-frequency profiles confirmed the roles of our top hubs and highlighted where their focus lay, but they remain static snapshots. Without a temporal dimension or deeper phrase extraction, they can miss emerging topics or nuanced multi-word concepts, underscoring the need for rolling-window TF–IDF or dynamic topic modeling to capture the first ripples of a brewing crisis. Also Lay’s terms center on strategy and compensation, underscoring his governance role. Skilling’s language is action-focused and immediate, reflecting his operational drive. Together, they highlight the contrast between high-level oversight and hands-on execution.
+Our TF–IDF unigram and bigram analyses distilled each executive’s core subject matter—unigrams revealing broad domain areas like “trading,” “regulation,” or “energy,” and bigrams uncovering specific phrases such as “power authority” or “strategy meeting.” These term-frequency profiles confirmed the roles of our top hubs and highlighted where their focus lay, but they remain static snapshots. Without a temporal dimension or deeper phrase extraction, they can miss emerging topics or nuanced multi-word phrases, underscoring the need for rolling-window TF–IDF or dynamic topic modeling to capture the first ripples of a brewing crisis. Also Lay’s terms center on strategy and compensation, underscoring his governance role. Skilling’s language is action-focused and immediate, reflecting his operational drive. Together, they highlight the contrast between high-level oversight and hands-on execution. Overall, the TF-IDF combined with unigrams and bigrams were unable to capture emerging crisis or signs of malfeasance as we had hoped. 
+
+
+
 
 # Future Work
 
