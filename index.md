@@ -246,7 +246,7 @@ Betweenness centrality shows which employees act as bridges on the shortest path
 The betweenness chart highlights **ward-k** as the primary “bridge” in the network—positioned on the most shortest paths between executives. Following him, **grigsby-m**, **dasovich-j**, **presto-k**, and **scott-s** also serve as key intermediaries. These individuals are crucial for information flow, acting as gatekeepers who connect otherwise distant clusters within Enron’s executive communications.  
 
 
-### Community Detection
+## Community Detection
 
 Using the Louvain algorithm, we identified six distinct communities in the Enron executive network. The node with the highest degree centrality was John Lavorato, Enron’s COO. Intriguingly, his community also included [Kenneth Lay ](https://en.wikipedia.org/wiki/Kenneth_Lay )and [Jeffrey Skilling](https://en.wikipedia.org/wiki/Jeffrey_Skilling)—both of whom were later convicted of fraud and insider trading and served prison sentences.
 <figure class="network-visualization" style="max-width: 600px; margin: 2rem auto;">
@@ -254,7 +254,7 @@ Using the Louvain algorithm, we identified six distinct communities in the Enron
   <figcaption>Figure 4. Nodes with highest betweenness.</figcaption>
 </figure>
 
----
+
 
 ---
 
@@ -492,7 +492,7 @@ Our TF–IDF unigram and bigram analyses distilled each executive’s core subje
 
 # Future Work
 
-"" what can we improve? ""
+
 
 
 
