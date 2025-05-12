@@ -152,7 +152,7 @@ h3 {
   <p class="subtitle">Exploring the Enron dataset with Natural Language Processing</p>
 </header>
 
-## Introduction
+# Introduction
 
 The Enron Email Dataset contains roughly half a million messages exchanged among some 6,000 employees—mostly senior executives—between 1998 and 2002. Originally released during the FERC inquiry into Enron’s collapse, it offers an unparalleled glimpse into the everyday communications and decision-making of a major corporation at a pivotal moment in history.
 
@@ -161,7 +161,7 @@ In this project, we focus on the subset of 150 executive-level employees, transf
 
 ---
 
-## Network Analysis
+# Network Analysis
 
 <figure class="network-visualization">
   <img src="images/completenetwork.png" alt="Graph of the complete network of all executives" style="max-width: 100%; height: auto;">
@@ -201,13 +201,9 @@ To uncover the key players and structural dynamics within Enron’s executive co
 Together, these methods allow us to pinpoint not only the most influential or active individuals but also the structural gateways and subgroups that shape information flow—and potentially conceal it—within Enron’s executive ranks.  
 
 
-### Centrality Scores
+## Centrality Scores
 
 Below we compare the top 5 nodes by **degree centrality** and **eigenvector centrality** side by side to highlight the most connected and most influential communicators.
-
-### Centrality Scores
-
-Below we compare the top 5 nodes by **degree** and **eigenvector** centralities side by side.
 
 <table>
   <tr>
