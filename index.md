@@ -258,7 +258,7 @@ Using the Louvain algorithm, we identified six distinct communities in the Enron
 
 ---
 
-## Sentiment Analysis Over Time
+# Sentiment Analysis Over Time
 
 Sentiment analysis is the process of automatically determining whether a piece of text expresses a positive, negative, or neutral attitude. By scoring the emotional tone of written language, it lets us quantify how people feel—whether they’re upbeat, anxious, or somewhere in between. For our Enron project, we used a **lexicon-based** approach via **TextBlob’s sentiment polarity analyzer**:
 
@@ -488,9 +488,7 @@ Our executive-level email graph does more than map who wrote to whom; it exposes
 
 Our sentiment analysis remained consistently above zero largely because executive emails are engineered to sound reassuring—polite, upbeat, and solution-focused—even when discussing bad news. Any genuine anxiety is often couched in neutral jargon and diluted by averaging hundreds of messages each month, so isolated negative tones never drag the monthly mean far below neutral. Moreover, using a generic lexicon (TextBlob) means that corporate specific terms like “liability” or “restructuring” can register as neutral, and the method can’t capture irony or mid-message urgency. 
 
-"" Part about unigrams and bigrams and TF-IDF ""
-
-"" Part about K lay and J skilling ""
+Our TF–IDF unigram and bigram analyses distilled each executive’s core subject matter—unigrams revealing broad domain areas like “trading,” “regulation,” or “energy,” and bigrams uncovering specific phrases such as “power authority” or “strategy meeting.” These term-frequency profiles confirmed the roles of our top hubs and highlighted where their focus lay, but they remain static snapshots. Without a temporal dimension or deeper phrase extraction, they can miss emerging topics or nuanced multi-word concepts, underscoring the need for rolling-window TF–IDF or dynamic topic modeling to capture the first ripples of a brewing crisis. Also Lay’s terms center on strategy and compensation, underscoring his governance role. Skilling’s language is action-focused and immediate, reflecting his operational drive. Together, they highlight the contrast between high-level oversight and hands-on execution.
 
 # Future Work
 
